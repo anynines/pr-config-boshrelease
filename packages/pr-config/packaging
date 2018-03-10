@@ -1,0 +1,6 @@
+set -e
+
+mkdir -p ${BOSH_INSTALL_TARGET}
+rm -rf ${BOSH_INSTALL_TARGET}/*
+cp -Ra pr-config/* ${BOSH_INSTALL_TARGET}/pr-config
+chmod +x ${BOSH_INSTALL_TARGET}/pr-config

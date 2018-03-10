@@ -1,0 +1,5 @@
+check process pr-config
+  with pidfile /var/vcap/sys/run/pr-config/pid
+  start program "/var/vcap/jobs/pr-config/bin/ctl start"
+  stop program "/var/vcap/jobs/pr-config/bin/ctl stop"
+  group vcap

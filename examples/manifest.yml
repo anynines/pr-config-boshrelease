@@ -1,0 +1,36 @@
+---
+name: pr-config
+
+update:
+  canaries: 1
+  canary_watch_time: 30000-600000
+  max_in_flight: 1
+  serial: true
+  update_watch_time: 5000-600000
+
+stemcells:
+- os: ubuntu-trusty
+  alias: ubuntu-trusty
+  version: latest
+
+releases:
+  - name: pr-config
+    version: latest
+
+instance_groups:
+- name: pr-config
+  instances: 1
+  azs: [z3,z2,z1]
+  stemcell: ubuntu-trusty
+  vm_type: default
+  persistent_disk_type: default
+  networks:
+  - name: default
+  jobs:
+  - name: pr-config
+    release: pr-config
+
+properties:
+  pr-config:
+    http_password: password
+    backend_url: "redis://admin:password@localhost"

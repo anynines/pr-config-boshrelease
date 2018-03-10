@@ -1,0 +1,20 @@
+---
+name: pr-config
+
+templates:
+  ctl.erb: bin/ctl
+
+packages:
+  - pr-config
+
+properties:
+  pr-config.port:
+    description: "The port to run the server at."
+    default: 4455
+  pr-config.http_username:
+    description: "The username for HTTP basic authentication."
+    default: "admin"
+  pr-config.http_password:
+    description: "The password for HTTP basic authentication."
+  pr-config.backend_url:
+    description: "The backend URL to store and retrieve JSON data."
