@@ -1,0 +1,15 @@
+name: pr-config
+version: "1"
+commit_hash: 4503d36
+uncommitted_changes: true
+jobs:
+- name: pr-config
+  version: 6c23c7b0393d177e9facd5fdbaa3b2a4a4282e94
+  fingerprint: 6c23c7b0393d177e9facd5fdbaa3b2a4a4282e94
+  sha1: 0ead8c4e4c316f05aee7d2797f4f1072dbc9cac1
+packages:
+- name: pr-config
+  version: fdf89bc493f828135162a801baf0e150e716e89f
+  fingerprint: fdf89bc493f828135162a801baf0e150e716e89f
+  sha1: 1da1a0bfe74f74c89c4ec6f6ddf2fd2bae99a282
+  dependencies: []
