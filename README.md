@@ -1,1 +1,1 @@
-# pr-config BOSH Release
+# pr-config BOSH release
